@@ -8,6 +8,7 @@ for line in f:
     l, w, h = line.split('x')
     l, w, h = int(l), int(w), int(h)
 
+    #paper
     sum1 = l * w
     sum2 = w * h
     sum3 = h * l
@@ -20,8 +21,6 @@ for line in f:
     r = min(l+l+w+w, l+l+h+h, w+w+h+h)
     bow = l * w * h
     ribbon += (r + bow)
-
-
 
 print(result)
 print(ribbon)
